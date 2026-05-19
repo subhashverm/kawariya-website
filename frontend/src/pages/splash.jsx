@@ -12,10 +12,11 @@ import image1 from "../assets/images-1.webp";
  import image2 from "../assets/image-2.webp"
  import image3 from "../assets/image-3.webp";
  import image4 from "../assets/image-4.webp"
+ import FooterImage1 from "../assets/image1.jpg";
+  import FooterImage2 from "../assets/image2.jpg";
+   import FooterImage3 from "../assets/image3.jpg";
 const images = [
-  "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b",
-  "https://images.unsplash.com/photo-1473625247510-8ceb1760943f",
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+  FooterImage1,FooterImage2,FooterImage3
 ];
 
 export default function Splash() {
