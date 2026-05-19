@@ -13,11 +13,6 @@ import FacilityManagement from "../admin/FacilityManagement";
 import SOSMonitoring from "../admin/SOSMonitoring";
 import RestFacilities from "../pages/RestFacilities";
 import MedicalHelp from "../pages/medicalFacilities";
-
-
-
-
-
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -36,7 +31,6 @@ export default function AppRoutes() {
         <Route path="/admin/facilities" element={<FacilityManagement />} />
       <Route path="/admin/login" element={<AdminLogin />} />
      <Route path="/admin/analytics" element={<AdminAnalytics />} />
-
       </Routes>
      </MainLayout>
       
