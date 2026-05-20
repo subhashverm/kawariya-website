@@ -27,7 +27,7 @@ const bookSlot = async () => {
       (slot) => slot.time === selectedSlot
     );
 
-    const res = await fetch("http://localhost:5000/api/darshan/book", {
+    const res = await fetch("https://kawariya-website-backend.onrender.com/api/darshan/book", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -23,7 +23,7 @@ const SOS = () => {
 
   const triggerSOS = async () => {
   try {
-    const res = await fetch("http://localhost:5000/api/sos/send", {
+    const res = await fetch("https://kawariya-website-backend.onrender.com/api/sos/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

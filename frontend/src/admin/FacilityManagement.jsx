@@ -22,7 +22,7 @@ const FacilityManagement = () => {
   }, []);
 
   const fetchFacilities = async () => {
-    const res = await fetch("http://localhost:5000/api/facilities");
+    const res = await fetch("https://kawariya-website-backend.onrender.com/api/facilities");
     const data = await res.json();
     setFacilities(data);
   };
@@ -36,7 +36,7 @@ const addFacility = async () => {
     return;
   }
 
-  await fetch("http://localhost:5000/api/facilities/add", {
+  await fetch("https://kawariya-website-backend.onrender.com/api/facilities/add", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

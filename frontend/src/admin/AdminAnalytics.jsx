@@ -17,7 +17,7 @@ const AdminAnalytics = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/admin/analytics")
+    fetch("https://kawariya-website-backend.onrender.com/api/admin/analytics")
       .then(res => res.json())
       .then(result => setData(result))
       .catch(err => console.log(err));

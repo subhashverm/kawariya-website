@@ -21,7 +21,7 @@ const Register = () => {
   e.preventDefault();
 
   try {
-    const res = await fetch("http://localhost:5000/api/pilgrims/register", {
+    const res = await fetch("https://kawariya-website-backend.onrender.com/api/pilgrims/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

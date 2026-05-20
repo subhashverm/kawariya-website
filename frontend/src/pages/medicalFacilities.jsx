@@ -4,7 +4,7 @@ const medicalPoints = () => {
   const [facilities, setFacilities] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/facilities")
+    fetch("https://kawariya-website-backend.onrender.com/api/facilities")
       .then(res => res.json())
       .then(data => {
        const medicalPoints = data.filter(f => f.type === "Medical");;

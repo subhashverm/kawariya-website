@@ -22,7 +22,7 @@ const verifyOtp = async () => {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/api/pilgrims/login", {
+    const res = await fetch("https://kawariya-website-backend.onrender.com/api/pilgrims/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

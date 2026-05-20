@@ -4,7 +4,7 @@ const RestFacilities = () => {
   const [facilities, setFacilities] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/facilities")
+    fetch("https://kawariya-website-backend.onrender.com/api/facilities")
       .then(res => res.json())
       .then(data => {
         const restPoints = data.filter(f => f.type === "Rest");

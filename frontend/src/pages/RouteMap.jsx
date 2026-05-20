@@ -56,7 +56,7 @@ useEffect(() => {
 
   // Fetch facilities
   useEffect(() => {
-    fetch("http://localhost:5000/api/facilities")
+    fetch("https://kawariya-website-backend.onrender.com/api/facilities")
       .then((res) => res.json())
       .then((data) => setFacilities(data))
       .catch((err) => console.log(err));

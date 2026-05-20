@@ -4,13 +4,13 @@ import { useEffect } from "react";
 const SOSMonitoring = () => {
 const [alerts, setAlerts] = useState([]);
 useEffect(() => {
-  fetch("http://localhost:5000/api/sos")
+  fetch("https://kawariya-website-backend.onrender.com/api/sos")
     .then(res => res.json())
     .then(data => setAlerts(data));
 }, []);
 
  const resolveSOS = async (id) => {
-  await fetch(`http://localhost:5000/api/sos/${id}`, {
+  await fetch(`https://kawariya-website-backend.onrender.com/api/sos/${id}`, {
     method: "PUT",
   });
 
